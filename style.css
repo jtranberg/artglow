@@ -1,0 +1,43 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+
+}
+#art
+{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    opacity: 1;
+
+}
+.glow
+{
+    position:absolute;
+    top: 270px;
+    left: 170px;
+
+    border-radius: 50%;
+    background-color: rgb(245, 215, 48);
+    opacity: 0;
+    animation: glow .15s infinite linear;
+    
+}
+@keyframes glow {
+    0%{
+        width: 5px; height: 5px;
+        opacity: 0;
+    }50%
+    {
+        height: 30px;
+        width: 30px;
+        opacity: .1;
+    }
+    100%{
+        width: 75px;
+        height: 125px;
+        opacity: .2;
+    }
+    
+}
